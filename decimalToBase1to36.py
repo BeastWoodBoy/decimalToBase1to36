@@ -18,7 +18,7 @@ def deci236(num,base):
     while powersOfbase[-1] <= numToConvert: # Creates a List of relevant powers of the base plus one extra
         powersOfbase.append(powersOfbase[-1] * base)
         
-    powersOfbase = powersOfbase[:-1][::-1] # Removes the last element and reverses the List
+    powersOfbase = powersOfbase[:-1][::-1] # Removes the extra element and reverses the list
     remainder = 0
     baseNumber = ""
     for num in powersOfbase: # Iterates through all the powers of the base found prviously and computes the value in the new base
